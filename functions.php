@@ -7,3 +7,13 @@ function theme_enqueue_styles() {
         array('parent-style')
     );
 }
+
+/** START - ADD LESS TO WORDPRESS -  **/
+add_action( 'wp_head' , 'itsb_lesscss' );
+function itsb_lesscss() {
+?>
+     <link rel="stylesheet/less" type="text/css" href="<?php echo bloginfo('url'); ?>/wp-content/themes/twenty-sixteen-child/lesscss/stylesheet.less">
+    <script src="/wp-content/themes/twenty-sixteen-child/lesscss/less.min.js" type="text/javascript"></script>
+<?php 
+}
+/** END - ADD LESS TO WORDPRESS  **/
