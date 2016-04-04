@@ -1,3 +1,56 @@
+@a1-red: #cf6565;
+@a1-white: #ffffff;
+
 .site {
-    background-color: #CAC5C5 !important;
+  background-color: @a1-white !important;
+
+    /* home page */
+    /*  #post-10 { */
+      div#content {
+        z-index: -1;
+      }
+      header#masthead {
+        z-index: 1;
+        position: absolute;
+      }
+
+      .site-inner {
+        margin: 0;
+        max-width: 100% !important;
+      }
+
+      h1.entry-title {
+        display: none;
+      }
+
+      div#content {
+        width: 100%;
+      }
+
+      header#masthead {
+        max-width: 1000px;
+        max-height: 80px;
+        margin-left: 10%;
+        padding: 1em;
+      }
+
+      .no-sidebar .entry-header, .no-sidebar .entry-content, .no-sidebar .entry-summary, .no-sidebar .entry-footer, .no-sidebar .comments-area, .no-sidebar .image-navigation, .no-sidebar .post-navigation, .no-sidebar .pagination, .no-sidebar .page-header, .no-sidebar .page-content, .no-sidebar .content-bottom-widgets {
+        margin-right: 0% !important;
+        margin-left: 0% !important;
+      }
+/*    } */
+}
+@media screen and (min-width: 56.875em) {
+  .no-sidebar .entry-header, .no-sidebar .entry-content, .no-sidebar .entry-summary, .no-sidebar .entry-footer, .no-sidebar .comments-area, .no-sidebar .image-navigation, .no-sidebar .post-navigation, .no-sidebar .pagination, .no-sidebar .page-header, .no-sidebar .page-content, .no-sidebar .content-bottom-widgets {
+    margin-right: -5% !important;
+    margin-left: -5% !important;
+  }
+}
+div#site-header-menu:before {
+  display: block;
+  content: url(http://www.a1labarts.com/wp-content/uploads/2016/04/a1labarts-org.logo_.thumb_.png);
+  height: 30px;
+}
+nav#site-navigation {
+  padding-left: 120px;
 }
