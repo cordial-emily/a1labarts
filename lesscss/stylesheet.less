@@ -20,14 +20,19 @@
       header#masthead {
         z-index: 1;
         position: absolute;
-        margin-left: 20%;
+        margin-left: 19%;
         padding: 0 1em;
 
-        p.site-title {
-          display: none;
-        }
-        p.site-description {
-          display: none;
+        .site-branding {
+          .easylogo img {
+            max-height: 150px;
+          }
+          p.site-title {
+            display: none;
+          }
+          p.site-description {
+            display: none;
+          }
         }
       }
     }
@@ -46,18 +51,12 @@
   }
   .site-header-main {
     padding: 0 20px 10px 10px;
-  }
-  div#site-header-menu:before {
-    display: block;
-    content: url(http://www.a1labarts.com/wp-content/uploads/2016/04/a1labarts-org.logo_.thumb_.png);
-    height: 30px;
-  }
-  nav#site-navigation {
-    padding-left: 120px;
-  }
-  .site-header-main {
     background-color: @al-whitre;
   }
-
 }
 
+@media screen and (max-width: 56.874em) {
+  button#menu-toggle {
+    background-color: #CF6467;
+  }
+}
