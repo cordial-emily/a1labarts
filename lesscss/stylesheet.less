@@ -1,37 +1,36 @@
 @a1-red: #cf6565;
 @a1-white: #ffffff;
+@al-whitre: rgba(255,255,255,.5);
 
 .site {
   background-color: @a1-white !important;
+    .site-inner {
+      margin: 0;
+      max-width: 100% !important;
 
-    /* home page */
-    /*  #post-10 { */
+      /* Page Content */
       div#content {
         z-index: -1;
+        width: 100%;
+
+        h1.entry-title { display:none;}
       }
+
+      /* Header */
       header#masthead {
         z-index: 1;
         position: absolute;
-      }
-
-      .site-inner {
-        margin: 0;
-        max-width: 100% !important;
-      }
-
-      h1.entry-title {
-        display: none;
-      }
-
-      div#content {
-        width: 100%;
-      }
-
-      header#masthead {
         margin-left: 20%;
         padding: 0 1em;
-      }
 
+        p.site-title {
+          display: none;
+        }
+        p.site-description {
+          display: none;
+        }
+      }
+    }
       .no-sidebar .entry-header, .no-sidebar .entry-content, .no-sidebar .entry-summary, .no-sidebar .entry-footer, .no-sidebar .comments-area, .no-sidebar .image-navigation, .no-sidebar .post-navigation, .no-sidebar .pagination, .no-sidebar .page-header, .no-sidebar .page-content, .no-sidebar .content-bottom-widgets {
         margin-right: 0% !important;
         margin-left: 0% !important;
@@ -39,24 +38,26 @@
 /*    } */
 }
 @media screen and (min-width: 56.875em) {
-  .no-sidebar .entry-header, .no-sidebar .entry-content, .no-sidebar .entry-summary, .no-sidebar .entry-footer, .no-sidebar .comments-area, .no-sidebar .image-navigation, .no-sidebar .post-navigation, .no-sidebar .pagination, .no-sidebar .page-header, .no-sidebar .page-content, .no-sidebar .content-bottom-widgets {
-    margin-right: -5% !important;
-    margin-left: -5% !important;
+  .no-sidebar {
+    .entry-header, .entry-content, .entry-summary, .entry-footer, .comments-area,  .image-navigation, .post-navigation, .pagination, .page-header, .page-content, .content-bottom-widgets {
+      margin-right: -5% !important;
+      margin-left: -5% !important;
+    }
   }
   .site-header-main {
     padding: 0 20px 10px 10px;
   }
+  div#site-header-menu:before {
+    display: block;
+    content: url(http://www.a1labarts.com/wp-content/uploads/2016/04/a1labarts-org.logo_.thumb_.png);
+    height: 30px;
+  }
+  nav#site-navigation {
+    padding-left: 120px;
+  }
+  .site-header-main {
+    background-color: @al-whitre;
+  }
 
 }
 
-div#site-header-menu:before {
-  display: block;
-  content: url(http://www.a1labarts.com/wp-content/uploads/2016/04/a1labarts-org.logo_.thumb_.png);
-  height: 30px;
-}
-nav#site-navigation {
-  padding-left: 120px;
-}
-.site-header-main {
-  background-color: rgba(255,255,255,.5);
-}
