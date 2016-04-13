@@ -20,10 +20,12 @@
       header#masthead {
         z-index: 1;
         position: absolute;
-        margin-left: 19%;
+        /*margin-left: 19%;*/
         padding: 0 1em;
 
         .site-branding {
+          margin: 5px 0 -5px;
+
           .easylogo img {
             max-height: 150px;
           }
@@ -49,9 +51,22 @@
       margin-left: -5% !important;
     }
   }
-  .site-header-main {
-    padding: 0 20px 10px 10px;
-    background-color: @al-whitre;
+  header#masthead {
+    margin-left: 19%;
+
+    .site-header-main {
+      padding: 0 20px 10px 10px;
+      background-color: @al-whitre;
+
+      .site-header-menu {
+        margin-left: 1.75em;
+
+        ul#menu-tip-top-menu {
+          list-style-type: none;
+          margin: 0 0 1.75em 0em;
+        }
+      }
+    }
   }
 }
 

@@ -17,3 +17,10 @@ function itsb_lesscss() {
 <?php 
 }
 /** END - ADD LESS TO WORDPRESS  **/
+
+/** Register menu **/
+function register_my_menu() {
+    register_nav_menu('new-menu',__( 'New Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
+/** end Register menu **/
