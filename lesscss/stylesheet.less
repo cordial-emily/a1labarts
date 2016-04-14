@@ -1,7 +1,9 @@
 @a1-red: #cf6565;
 @a1-white: #ffffff;
-@al-whitre: rgba(255,255,255,.5);
+@al-whitre: rgba(255,255,255,.75);
 
+h1, h2, h3, h4, h5, h6, #site-header-menu ul li a {font-family: "Arial Narrow";}
+p {font-family: SansSerif;}
 .site {
   background-color: @a1-white !important;
     .site-inner {
@@ -25,7 +27,7 @@
 
         .site-branding {
           margin: 0px 0 0px;
-          padding-right: 10px;
+          padding: 10px;
           border-right: 2px solid #ccc;
 
           .easylogo img {
@@ -38,9 +40,34 @@
             display: none;
           }
         }
-        .site-header-menu ul li a {
-          color: #747171;
-          text-transform: uppercase !important;
+        .site-header-menu {
+          ul li a {
+            color: #747171;
+            text-transform: uppercase !important;
+          }
+
+          .tip-top-menu {
+            float: left;
+            display: block;
+            width: 100%;
+            border-bottom: 2px solid #ccc;
+
+              .menu-tip-top-menu-container {
+                float: left;
+                max-width: 50%;
+                display: block;
+              }
+              .search-form {
+                float:right;
+                max-width: 50%;
+                display: block;
+                margin-right: .4em;
+              }
+
+            nav#site-navigation {
+              float: left;
+            }
+          }
         }
       }
     }
@@ -55,6 +82,9 @@
     margin-left: 7.6923%;
     button#menu-toggle {
       background-color: #CF6467;
+    }
+    div#site-header-menu {
+      background-color: #fff;
     }
   }
 }
@@ -71,11 +101,15 @@
       .site-header-menu {
         margin: .75em 0em 0em 0em;
 
+        .main-navigation {
+          margin: 20px 0em;
+        }
+
         ul#menu-tip-top-menu {
           list-style-type: none;
           margin: 0 0 .25em 0em;
           padding: 0 0 1em 1em;
-          border-bottom: 2px solid #ccc;
+
         }
 
       }
@@ -100,11 +134,14 @@
       .site-header-menu {
         margin: .75em 0em 0em 0em;
 
+        .main-navigation {
+          margin: 20px 0em;
+        }
+
         ul#menu-tip-top-menu {
           list-style-type: none;
           margin: 0 0 .25em 0em;
           padding: 0 0 1em 1em;
-          border-bottom: 2px solid #ccc;
         }
       }
     }

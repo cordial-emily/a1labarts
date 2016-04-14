@@ -46,7 +46,7 @@
 					<button id="menu-toggle" class="menu-toggle"><?php _e( 'Menu', 'twentysixteen' ); ?></button>
 
 					<div id="site-header-menu" class="site-header-menu">
-						<?php wp_nav_menu( array( 'theme_location' => 'new-menu' ) ); ?>
+						<div class="tip-top-menu"><?php wp_nav_menu( array( 'theme_location' => 'new-menu' ) ); ?> <?php get_search_form(); ?></div>
 						<?php if ( has_nav_menu( 'primary' ) ) : ?>
 							<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'twentysixteen' ); ?>">
 								<?php
