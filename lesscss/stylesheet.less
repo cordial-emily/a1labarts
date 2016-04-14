@@ -38,7 +38,7 @@ a, #site-header-menu ul li a {font-family: @a1-font1;}
         .site-branding {
           margin: 0px 0 0px;
           padding: 10px;
-          border-right: 2px solid #ccc;
+          /*border-right: 2px solid #ccc;*/
 
           .easylogo img {
             max-height: 120px;
@@ -78,6 +78,9 @@ a, #site-header-menu ul li a {font-family: @a1-font1;}
               float: left;
             }
           }
+          .menu-top-menu-container ul#menu-top-menu {
+            margin-top: 65px;
+          }
         }
       }
     }
@@ -95,11 +98,13 @@ a, #site-header-menu ul li a {font-family: @a1-font1;}
   }
   header#masthead {
     margin-left: 7.6923%;
-    button#menu-toggle {
-      background-color: #CF6467;
-    }
-    div#site-header-menu {
-      background-color: #fff;
+    .site-header-main {
+      button#menu-toggle {
+        background-color: #CF6467;
+      }
+      div#site-header-menu {
+        background-color: #fff;
+      }
     }
   }
 }
@@ -125,12 +130,18 @@ a, #site-header-menu ul li a {font-family: @a1-font1;}
   header#masthead {
     margin-left: 11%;
 
+    .site-branding {
+      border-right: 2px solid #ccc;
+    }
     .site-header-main {
       padding: 0 0px 0px 0px;
       background-color: @al-whitre;
 
+      .site-branding {
+        border-right: 2px solid #ccc;
+      }
       .site-header-menu {
-        margin: .75em 0em 0em 0em;
+        margin: .5em 0em 0em 0em;
         width: 80%;
 
         .main-navigation {
@@ -173,12 +184,16 @@ a, #site-header-menu ul li a {font-family: @a1-font1;}
   header#masthead {
     margin-left: 18%;
 
+    .site-branding {
+      border-right: 2px solid #ccc;
+    }
+
     .site-header-main {
       padding: 0 0px 0px 0px;
       background-color: @al-whitre;
 
       .site-header-menu {
-        margin: .75em 0em 0em 0em;
+        margin: .5em 0em 0em 0em;
 
         .main-navigation {
           margin: 20px 0em;
