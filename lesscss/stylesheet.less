@@ -1,4 +1,4 @@
-@a1-red: #cf6565;
+@a1-red: #cf6565; /* #CF6467 */
 @a1-white: #ffffff;
 @al-whitre: rgba(255,255,255,.75);
 @a1-font1: "Arial Narrow";
@@ -25,6 +25,10 @@ a, #site-header-menu ul li a {font-family: @a1-font1;}
         z-index: -1;
         width: 100%;
 
+        .entry-content {
+          border-top: 5px solid @a1-red;
+        }
+
         h1.entry-title { display:none;}
       }
 
@@ -35,32 +39,35 @@ a, #site-header-menu ul li a {font-family: @a1-font1;}
         /*margin-left: 19%;*/
         padding: 0 1em;
 
-        .site-branding {
-          margin: 0px 0 0px;
-          padding: 10px;
-          /*border-right: 2px solid #ccc;*/
+        .site-header-main {
+          margin-top: 5px;
 
-          .easylogo img {
-            max-height: 120px;
-          }
-          p.site-title {
-            display: none;
-          }
-          p.site-description {
-            display: none;
-          }
-        }
-        .site-header-menu {
-          ul li a {
-            color: #747171;
-            text-transform: uppercase !important;
-          }
+          .site-branding {
+            margin: 0px 0 0px;
+            padding: 10px;
+            /*border-right: 2px solid #ccc;*/
 
-          .tip-top-menu {
-            float: left;
-            display: block;
-            width: 100%;
-            border-bottom: 2px solid #ccc;
+            .easylogo img {
+              max-height: 120px;
+            }
+            p.site-title {
+              display: none;
+            }
+            p.site-description {
+              display: none;
+            }
+          }
+          .site-header-menu {
+            ul li a {
+              color: #747171;
+              text-transform: uppercase !important;
+            }
+
+            .tip-top-menu {
+              float: left;
+              display: block;
+              width: 100%;
+              border-bottom: 2px solid #ccc;
 
               .menu-tip-top-menu-container {
                 float: left;
@@ -68,18 +75,19 @@ a, #site-header-menu ul li a {font-family: @a1-font1;}
                 display: block;
               }
               .search-form {
-                float:right;
+                float: right;
                 max-width: 50%;
                 display: block;
                 margin-right: .4em;
               }
 
-            nav#site-navigation {
-              float: left;
+              nav#site-navigation {
+                float: left;
+              }
             }
-          }
-          .menu-top-menu-container ul#menu-top-menu {
-            margin-top: 65px;
+            .menu-top-menu-container ul#menu-top-menu {
+              margin-top: 65px;
+            }
           }
         }
       }
@@ -135,10 +143,21 @@ a, #site-header-menu ul li a {font-family: @a1-font1;}
     }
     ul.rslides_tabs.rslides1_tabs {
       position: relative;
-      top: -14em;
+      top: -3em;
       z-index: 1;
       background-color: transparent;
       border-bottom: 1px solid #fff !important;
+      width: 80%;
+      margin-left: 10% !important;
+
+      li {
+        position: relative;
+        right: -13em;
+
+        a.rslides1_s1 {
+          box-shadow: 0 0px 0 0 currentColor;
+        }
+      }
     }
   }
 
@@ -193,10 +212,10 @@ a, #site-header-menu ul li a {font-family: @a1-font1;}
         width: 30%;
         margin-left: 60%;
         background: #646464;
-        padding: 2em;
+        padding: 2em 2.3em 0em 2.3em ;
 
         .caption {
-          font-size: 3.3em;
+          font-size: 3em;
           line-height: 1.3;
           font-family: @a1-font2;
           font-weight: 300;
@@ -205,10 +224,21 @@ a, #site-header-menu ul li a {font-family: @a1-font1;}
     }
     ul.rslides_tabs.rslides1_tabs {
       position: relative;
-      top: -18em;
+      top: -3em;
       z-index: 1;
       background-color: transparent;
       border-bottom: 1px solid #fff !important;
+      width: 80%;
+      margin-left: 10% !important;
+
+        li {
+          position: relative;
+          right: -19em;
+
+          a {
+            box-shadow: 0 0px 0 0 currentColor;
+          }
+        }
     }
   }
 
