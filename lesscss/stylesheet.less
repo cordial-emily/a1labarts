@@ -37,6 +37,10 @@ ol, ul {
             padding:0;
             margin:0;
           }
+          .splash .dashicons {
+            font-size: 4em;
+            margin: 0em 1em 1em 1em;
+          }
           .full-color-box {
             float:left;
             width:100%;
@@ -59,13 +63,23 @@ ol, ul {
         }
 
         h1.entry-title { display:none;}
-        section#nav_menu-3 {
-          width: 50%;
-          float: left;
-        }
-        section#text-2 {
-          width: 50%;
-          float: left;
+        aside#content-bottom-widgets {
+          background-color: @a1-red;
+
+          .widget-area {
+            section#nav_menu-3 {
+              width: 50%;
+              float: left;
+              padding: 2% 5%;
+              background-color: transparent;
+            }
+            section#text-2 {
+              width: 50%;
+              float: left;
+              padding: 2% 5%;
+              background-color: transparent;
+            }
+          }
         }
       }
 
@@ -162,6 +176,18 @@ ol, ul {
 
         li {
         }
+      }
+    }
+    .widget-area {
+      section#text-2 {
+        width: 100% !important;
+        float: left;
+        background-color: @a1-red !important;
+
+      }
+      section#nav_menu-3 {
+        display: none !important;
+
       }
     }
   }
