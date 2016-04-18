@@ -25,4 +25,8 @@ function register_my_menu() {
 add_action( 'init', 'register_my_menu' );
 /** end Register menu **/
 
- /* Add menu to footer */
+ /* Add dashicons to frontend */
+add_action( 'wp_enqueue_scripts', 'themename_scripts' );
+function themename_scripts() {
+    wp_enqueue_style( 'themename-style', get_stylesheet_uri(), array( 'dashicons' ), '1.0' );
+}
