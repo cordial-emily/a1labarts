@@ -4,10 +4,12 @@
 @a1-font1: "Arial Narrow";
 @a1-font2: 'Dosis', sans-serif;
 
-h1, h2, h3, h4, h5, h6 { font-family: @a1-font2; font-weight: 400 !important;}
+h1, h2, h3, h4, h5, h6 { font-family: @a1-font2; font-weight: 200 !important;}
 a, #site-header-menu ul li a {font-family: @a1-font1;}
 p {font-family: @a1-font1;}
-
+ol, ul {
+  list-style: none;
+}
 .site {
   background-color: @a1-white !important;
 
@@ -27,7 +29,7 @@ p {font-family: @a1-font1;}
         width: 100%;
 
         .entry-content {
-          border-top: 5px solid @a1-red;
+          padding-top: 5em;
 
           .newsbox {
             width:100%;
@@ -55,12 +57,20 @@ p {font-family: @a1-font1;}
         }
 
         h1.entry-title { display:none;}
+        section#nav_menu-3 {
+          width: 50%;
+          float: left;
+        }
+        section#text-2 {
+          width: 50%;
+          float: left;
+        }
       }
 
       /* Header */
       header#masthead {
         z-index: 1;
-        position: absolute;
+        /*position: absolute;*/
         /*margin-left: 19%;*/
         padding: 0 1em;
 
@@ -117,11 +127,17 @@ p {font-family: @a1-font1;}
         }
       }
     }
-    /*.no-sidebar .entry-header, .no-sidebar .entry-content, .no-sidebar .entry-summary, .no-sidebar .entry-footer, .no-sidebar .comments-area, .no-sidebar .image-navigation, .no-sidebar .post-navigation, .no-sidebar .pagination, .no-sidebar .page-header, .no-sidebar .page-content, .no-sidebar .content-bottom-widgets {
-      margin-right: 0% !important;
-      margin-left: 0% !important;
-    }*/
 }
+.home.page-id-10 {
+  header#masthead {
+    position: absolute;
+  }
+  .entry-content {
+    padding-top: 0em !important;
+    border-top: 5px solid @a1-red;
+  }
+}
+
 /* Small screen 56.874em */
 @media screen and (max-width: 910px) {
   div#content {
@@ -242,7 +258,7 @@ p {font-family: @a1-font1;}
       }
     }
   }
-  .no-sidebar {
+  .page-id-10.no-sidebar {
     .entry-header, .entry-content, .entry-summary, .entry-footer, .comments-area,  .image-navigation, .post-navigation, .pagination, .page-header, .page-content, .content-bottom-widgets {
       margin-right: -5% !important;
       margin-left: -5% !important;
@@ -330,7 +346,7 @@ p {font-family: @a1-font1;}
       }
     }
   }
-  .no-sidebar {
+  .page-id-10.no-sidebar {
     .entry-header, .entry-content, .entry-summary, .entry-footer, .comments-area,  .image-navigation, .post-navigation, .pagination, .page-header, .page-content, .content-bottom-widgets {
       margin-right: -5% !important;
       margin-left: -5% !important;
