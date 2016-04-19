@@ -1,6 +1,7 @@
 @a1-red: #cf6565; /* #CF6467 */
 @a1-white: #ffffff;
 @a1-yel: #F0C236;
+@a1-gr: #646560;
 @al-whitre: rgba(255,255,255,.75);
 @a1-font1: "Arial Narrow";
 @a1-font2: 'Dosis', sans-serif;
@@ -46,6 +47,11 @@ input.button {
               width:50%;
               float:left;
               padding: 1.6em;
+
+              h1, h2 {
+                color: @a1-gr;
+                border-bottom: 1px solid;
+              }
 
               .ecs-event {
                 width: 100%;
@@ -99,6 +105,25 @@ input.button {
                   height: 150px;
                 }
               }
+              .listing-item {
+                margin-bottom: 4em;
+
+                a img.attachment-thumbnail.size-thumbnail.wp-post-image {
+                  float: left;
+                  margin: 0px 20px 10px 0px;
+                }
+                a.title {
+                  font-size: 1.8em;
+                  letter-spacing: 3.78947px;
+                  font-weight: 200;
+                  font-family: 'Arial Narrow';
+                  text-transform: uppercase;
+                  color: #000;
+                }
+                span.excerpt {
+                  font-family: SansSerif;
+                }
+              }
             }
           }
           .splash {
@@ -133,7 +158,7 @@ input.button {
               position: relative;
               border: 1px solid;
               padding: 10px;
-              color: #646560;
+              color: @a1-gr;
             }
             li.a1one::before {  content: "\f115"; }
             li.a1two::before {  content: "\f488"; }
@@ -185,8 +210,6 @@ input.button {
       /* Header */
       header#masthead {
         z-index: 1;
-        /*position: absolute;*/
-        /*margin-left: 19%;*/
         padding: 0 1em;
 
         .site-header-main {
@@ -195,7 +218,6 @@ input.button {
           .site-branding {
             margin: 0px 0 0px;
             padding: 10px;
-            /*border-right: 2px solid #ccc;*/
 
             .easylogo img {
               max-height: 120px;

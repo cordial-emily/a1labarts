@@ -30,3 +30,8 @@ add_action( 'wp_enqueue_scripts', 'themename_scripts' );
 function themename_scripts() {
     wp_enqueue_style( 'themename-style', get_stylesheet_uri(), array( 'dashicons' ), '1.0' );
 }
+/* change excerpt length for posts  */
+function custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
