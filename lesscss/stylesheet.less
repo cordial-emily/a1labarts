@@ -10,8 +10,10 @@ a, #site-header-menu ul li a {font-family: @a1-font1;}
 p {font-family: @a1-font1;}
 a { box-shadow: 0 0px 0 0 currentColor !important;}
 input[type="reset"]:hover, a:hover {background:@a1-yel;}
-ol, ul {
-  list-style: none;
+ol, ul { list-style: none; }
+input.button {
+  background: #CF6565;
+  border: 1px solid #fff;
 }
 .site {
   background-color: @a1-white !important;
@@ -39,6 +41,65 @@ ol, ul {
             float:left;
             padding:0;
             margin:0;
+
+            .innews {
+              width:50%;
+              float:left;
+              padding: 1.6em;
+
+              .ecs-event {
+                width: 100%;
+                display: flex;
+                height: 12em;
+                margin-bottom: 4em;
+
+                img.attachment-150x150.size-150x150.wp-post-image {
+                  height: 10em;
+                }
+
+                a {
+                  float: left;
+                  width: 24%;
+                  height: 80%;
+                  margin-right: 2%;
+                }
+                .duration {
+                  float: left;
+                  width: 12%;
+                  margin-right: 2%;
+                  color: #8E8C8C;
+                  font-size: .8em;
+                  text-align: center;
+                  font-family: 'Dosis', sans-serif;
+                  margin-top: 40px;
+
+                }
+                h4.entry-title {
+                  float: left;
+                  display: inline !important;
+                  margin: 0 2%;
+                  font-size: 1.8em;
+                  width: 50%;
+                  height: 6em;
+
+                  a {
+                    float: left;
+                    width: 100%;
+                    /*height: 80%;
+                    margin-right: 2%;*/
+                  }
+                }
+                p.ecs-excerpt {
+                  float: left;
+                  width: 30%;
+                  position: relative;
+                  left: -295px;
+                  margin-top: 5em;
+                  margin-right: -6em;
+                  height: 150px;
+                }
+              }
+            }
           }
           .splash {
             .dashicons {
@@ -83,8 +144,8 @@ ol, ul {
             width:100%;
             margin:0px;
             padding: 2em .6em;
-            text-align:center;
-            background-color:#CF6565;
+            text-align: center;
+            background-color:@a1-red;
 
             h3 { margin-top: 0px; }
           }
@@ -218,6 +279,18 @@ ol, ul {
         li {
         }
       }
+      .innews {
+        width: 100% !important;
+        padding-left: 0em !important;
+
+        .ecs-event {
+          margin-bottom: 6em !important;
+
+          p.ecs-excerpt {
+            display: none;
+          }
+        }
+      }
     }
     .widget-area {
       section#text-2 {
@@ -299,6 +372,17 @@ ol, ul {
 
         li {
           width: 29%;
+        }
+      }
+      .innews {
+        width: 100% !important;
+
+        .ecs-event {
+          margin-bottom: 6em !important;
+
+          p.ecs-excerpt {
+            display: none;
+          }
         }
       }
     }
