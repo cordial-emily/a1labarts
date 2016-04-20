@@ -35,3 +35,6 @@ function custom_excerpt_length( $length ) {
     return 20;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+// Use shortcodes in widgets
+add_filter( 'widget_text', 'do_shortcode' );

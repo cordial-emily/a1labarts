@@ -17,6 +17,7 @@ input.button {
   background: #CF6565;
   border: 1px solid #fff;
 }
+.widget { border-top: 2px solid #ccc; }
 .site {
   background-color: @a1-white !important;
 
@@ -238,12 +239,22 @@ input.button {
               }
             }
           }
+          .mem-col {
+            a.title {
+              letter-spacing: 0.046875em;
+              line-height: 1.3125;
+              margin: 0 0 1.75em;
+              text-transform: uppercase;
+              font-family: Montserrat, "Helvetica Neue", sans-serif;
+              font-size: 2.2em;
+            }
+          }
         }
 
 
         h1.entry-title { display:none;}
         aside#content-bottom-widgets {
-          display: none;
+          /*display: none;*/
           /*background-color: @a1-red;
 
           .widget-area {
@@ -266,36 +277,42 @@ input.button {
       footer#colophon {
         background: @a1-red;
 
-        .site-title {
-          font-family: @a1-font1;
-          color: @a1-white;
-          font-size: 16px;
+        .site-info {
+          padding-left: 20%;
 
-          a {
+          .site-title {
+            font-family: @a1-font1;
             color: @a1-white;
-            text-transform: uppercase;
+            font-size: 16px;
 
-            span.dashicons.dashicons-facebook {
-              font-size: 2em;
-              position: relative;
-              top: 10px;
+            a {
+              color: @a1-white;
+              text-transform: uppercase;
+
+              span.dashicons.dashicons-facebook {
+                font-size: 2em;
+                position: relative;
+                top: 10px;
+              }
+            }
+            a.one {
+              margin-right: 20px;
+              padding-right: 20px;
+              border-right: 1px solid #fff;
+            }
+            a.two {
+              margin-right: 20px;
+              padding-right: 20px;
+              border-right: 1px solid #fff;
+            }
+            a.three {
+              margin-right: 20px;
             }
           }
-          a.one {
-            margin-right: 20px;
-            padding-right: 20px;
-            border-right: 1px solid #fff;
-          }
-          a.two {
-            margin-right: 20px;
-            padding-right: 20px;
-            border-right: 1px solid #fff;
-          }
-          a.three {
-            margin-right: 20px;
+          .site-title:after {
+            display: none;
           }
         }
-        .site-title:after {display: none;}
       }
       /* Header */
       header#masthead {
@@ -506,10 +523,12 @@ input.button {
   }
 
   header#masthead {
-    margin-left: 11%;
+    margin-left: 9%;
 
     .site-branding {
       border-right: 2px solid #ccc;
+      border-bottom: 2px solid #ccc;
+      border-left: 2px solid #ccc;
     }
     .site-header-main {
       padding: 0 0px 0px 0px;
@@ -519,8 +538,12 @@ input.button {
         border-right: 2px solid #ccc;
       }
       .site-header-menu {
-        margin: .5em 0em 0em 0em;
-        width: 80%;
+        margin: 0em 0em 0em 0em;
+        border-bottom: 2px solid #ccc;
+        border-right: 2px solid #ccc;
+        padding: .8em 0 0;
+        /*margin: .5em 0em 0em 0em;*/
+        /*width: 80%;*/
 
         .main-navigation {
           margin: 20px 0em;
@@ -608,6 +631,8 @@ input.button {
 
     .site-branding {
       border-right: 2px solid #ccc;
+      border-bottom: 2px solid #ccc;
+      border-left: 2px solid #ccc;
     }
 
     .site-header-main {
@@ -615,7 +640,11 @@ input.button {
       background-color: @al-whitre;
 
       .site-header-menu {
-        margin: .5em 0em 0em 0em;
+        margin: 0em 0em 0em 0em;
+        border-bottom: 2px solid #ccc;
+        border-right: 2px solid #ccc;
+        padding: .8em 0 0;
+        /*margin: .5em 0em 0em 0em;*/
 
         .main-navigation {
           margin: 20px 0em;
