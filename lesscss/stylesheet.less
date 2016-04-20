@@ -6,6 +6,7 @@
 @a1-font1: "Arial Narrow";
 @a1-font2: 'Dosis', sans-serif;
 
+body {font-family: 'Dosis', sans-serif;}
 h1, h2, h3, h4, h5, h6 { font-family: @a1-font2; font-weight: 200 !important;}
 a, #site-header-menu ul li a {font-family: @a1-font1;}
 p {font-family: @a1-font1;}
@@ -54,13 +55,14 @@ input.button {
               }
 
               .ecs-event {
-                width: 100%;
+                width: 120%;
                 display: flex;
                 height: 12em;
                 margin-bottom: 4em;
 
                 img.attachment-150x150.size-150x150.wp-post-image {
                   height: 10em;
+                  margin-right: 2%;
                 }
 
                 a {
@@ -77,16 +79,16 @@ input.button {
                   font-size: .8em;
                   text-align: center;
                   font-family: 'Dosis', sans-serif;
-                  margin-top: 40px;
+                  margin-top: 30px;
 
                 }
                 h4.entry-title {
                   float: left;
                   display: inline !important;
-                  margin: 0 2%;
+                  margin: 0 1%;
                   font-size: 1.8em;
-                  width: 50%;
-                  height: 6em;
+                  width: 80%;
+                  min-height: 2em;
 
                   a {
                     float: left;
@@ -97,31 +99,35 @@ input.button {
                 }
                 p.ecs-excerpt {
                   float: left;
-                  width: 30%;
+                  width: 65%;
                   position: relative;
-                  left: -295px;
+                  left: -22em;
                   margin-top: 5em;
                   margin-right: -6em;
                   height: 150px;
                 }
               }
-              .listing-item {
-                margin-bottom: 4em;
+              .display-posts-listing {
+                width: 85%;
 
-                a img.attachment-thumbnail.size-thumbnail.wp-post-image {
-                  float: left;
-                  margin: 0px 20px 10px 0px;
-                }
-                a.title {
-                  font-size: 1.8em;
-                  letter-spacing: 3.78947px;
-                  font-weight: 200;
-                  font-family: 'Arial Narrow';
-                  text-transform: uppercase;
-                  color: #000;
-                }
-                span.excerpt {
-                  font-family: SansSerif;
+                .listing-item {
+                  margin-bottom: 4em;
+
+                  a img.attachment-thumbnail.size-thumbnail.wp-post-image {
+                    float: left;
+                    margin: 0px 20px 10px 0px;
+                  }
+                  a.title {
+                    font-size: 1.8em;
+                    letter-spacing: 3.78947px;
+                    font-weight: 200;
+                    font-family: 'Arial Narrow';
+                    text-transform: uppercase;
+                    color: #000;
+                  }
+                  span.excerpt {
+                    font-family: SansSerif;
+                  }
                 }
               }
             }
@@ -133,7 +139,7 @@ input.button {
             }
             a {
               color: @a1-red;
-              font-size: 1.7em;
+              font-size: 1.3em;
               letter-spacing: 1px;
               font-family: 'Dosis', sans-serif;
               font-weight: 200 !important;
@@ -145,7 +151,7 @@ input.button {
                 margin-left: 10px;
 
                 input.button {
-                  margin: 0 15%;
+                  margin: 4% 0%;
                 }
               }
             }
@@ -181,6 +187,20 @@ input.button {
             li {
               float:left;
               padding: 1.6em;
+
+              a {
+                h2 {
+                  margin: 0em 0em 0em -.5em;
+                  font-size: 2.5em;
+                  width: 5em;
+                  color: #fff;
+                  font-weight: 400 !important;
+                }
+                img {
+                  width: 150px;
+                  height: 150px;
+                }
+              }
             }
           }
         }
