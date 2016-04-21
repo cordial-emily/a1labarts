@@ -50,7 +50,7 @@
 					 */
 					do_action( 'twentysixteen_credits' );
 				?>
-				<span class="site-title"><a class="one" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>  <a class="two" href="https://www.facebook.com/A1LabArts/"> Like Us on <span class="dashicons dashicons-facebook"></span> </a> <a class="three" href="http://cordial-emily.com/">Design by ES</a></span>
+				<span class="site-title"><a class="one" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>  <a class="two" href="https://www.facebook.com/A1LabArts/"> Like Us on <span class="dashicons dashicons-facebook"></span> </a> <a class="three" href="http://cordial-emily.com/">Design</a></span>
 				<a href="https://www.grassroots.org" data-mce-href="https://www.grassroots.org"><img src="https://www.grassroots.org/images/memberbanner_black.jpg" alt="grassroots.org logo" data-mce-src="https://www.grassroots.org/images/memberbanner_black.jpg" /></a>
 			</div><!-- .site-info -->
 		</footer><!-- .site-footer -->
