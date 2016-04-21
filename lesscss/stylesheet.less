@@ -2,6 +2,7 @@
 @a1-white: #ffffff;
 @a1-yel: #F0C236;
 @a1-gr: #646560;
+@a1-grtr: rgba(146, 145, 144, 0.64);
 @al-whitre: rgba(255,255,255,.75);
 @a1-font1: "Arial Narrow";
 @a1-font2: 'Dosis', sans-serif;
@@ -14,8 +15,12 @@ a { box-shadow: 0 0px 0 0 currentColor !important;}
 input[type="reset"]:hover, a:hover {background:@a1-yel;}
 ol, ul { list-style: none; }
 input.button {
-  background: #CF6565;
-  border: 1px solid #fff;
+  background: @a1-red;
+  border: 1px solid @a1-white;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 200 !important;
 }
 .widget { border-top: 2px solid #ccc; }
 .site {
@@ -113,7 +118,7 @@ input.button {
                 width: 85%;
 
                 .listing-item {
-                  margin-bottom: 4em;
+                  margin-bottom: 5em;
 
                   a img.attachment-thumbnail.size-thumbnail.wp-post-image {
                     float: left;
@@ -143,7 +148,7 @@ input.button {
             }
             a {
               color: @a1-red;
-              font-size: 1.3em;
+              font-size: 1em;
               letter-spacing: 1px;
               font-family: 'Dosis', sans-serif;
               font-weight: 200 !important;
@@ -183,6 +188,38 @@ input.button {
             background-color:@a1-red;
 
             h3 { margin-top: 0px; }
+
+            ul#programs {
+              li {
+                a {
+                  div.ind-programs {
+                    /*border: 1px solid @a1-white;*/
+                    /*width: 70%;*/
+                    padding: 1.5em 2.5em;
+                    max-height: 16.7em;
+                  }
+                  div.ind-programs:hover {
+                    background-color: @a1-yel;
+                  }
+                }
+              }
+            }
+          }
+          .full-color-box.pro {
+            background: url(http://www.a1labarts.com/wp-content/uploads/2016/04/a1labarts_gallery_space.1.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            padding: .5em 1em;
+
+            h2.pr-top {
+              color: #fff;
+              text-align: left;
+              border-bottom: 1px solid;
+              width: 78%;
+              padding-bottom: .1em;
+            }
           }
           ul.a1-columns {
             list-style-type: none;
@@ -190,17 +227,19 @@ input.button {
 
             li {
               float:left;
-              padding: 1.6em;
+              padding: 0 1.6em;
 
               a {
                 h2 {
-                  margin: 0em 0em 0em -.5em;
-                  font-size: 2.5em;
-                  width: 5em;
-                  color: #fff;
-                  font-weight: 400 !important;
+                  margin: 0 0em 0em 1em;
+                  width: 6em;
+                  color: @a1-white;
+                  font-size: 1.3em;
+                  letter-spacing: 1px;
+                  font-family: 'Dosis', sans-serif;
+                  font-weight: 200 !important;
+                  text-transform: uppercase;;
                 }
-                h2:hover {color: @a1-yel !important;}
                 img {
                   width: 150px;
                   height: 150px;
@@ -228,8 +267,8 @@ input.button {
                   border: 1px solid @a1-white;
                   border-radius: 2px;
                   color: @a1-white;
-                  font-family: Montserrat, "Helvetica Neue", sans-serif;
-                  font-weight: 700;
+                  font-family: 'Dosis', sans-serif;
+                  font-weight: 200 !important;
                   letter-spacing: 0.046875em;
                   line-height: 1;
                   padding: 1em !important;
@@ -379,6 +418,9 @@ input.button {
   .entry-content {
     padding-top: 0em !important;
     border-top: 5px solid @a1-red;
+
+    h2 { margin-bottom: .3em; margin-top: .3em; }
+    h6 { margin-top: 1.3em; margin-bottom: 1.6em; }
   }
   .entry-content:after {display:none;}
   .site-footer {
@@ -402,6 +444,16 @@ input.button {
       }
       ul.a1-columns.splash {
         margin-left: 15% !important;
+      }
+      ul#programs {
+        li {
+          a {
+            div.ind-programs {
+              /*border: 1px solid @a1-white;*/
+              width: 100%;
+            }
+          }
+        }
       }
       ul.a1-columns {
         display: flex;
@@ -496,6 +548,16 @@ input.button {
 
             a.rslides1_s1 {
               box-shadow: 0 0px 0 0 currentColor;
+            }
+          }
+        }
+      }
+      ul#programs {
+        li {
+          a {
+            div.ind-programs {
+              /*border: 1px solid @a1-white;*/
+              width: 100%;
             }
           }
         }
@@ -611,6 +673,16 @@ input.button {
 
             a {
               box-shadow: 0 0px 0 0 currentColor;
+            }
+          }
+        }
+      }
+      ul#programs {
+        li {
+          a {
+            div.ind-programs {
+              /*border: 1px solid @a1-white;*/
+              width: 70%;
             }
           }
         }
