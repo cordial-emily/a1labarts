@@ -6,6 +6,7 @@
 @al-whitre: rgba(255,255,255,.75);
 @a1-font1: "Arial Narrow";
 @a1-font2: 'Dosis', sans-serif;
+h1.entry-title { display:none;}
 
 body {font-family: 'Dosis', sans-serif;}
 h1, h2, h3, h4, h5, h6 { font-family: @a1-font2; font-weight: 200 !important;}
@@ -95,6 +96,7 @@ input.button {
                   font-size: 1.8em;
                   width: 80%;
                   min-height: 2em;
+                  text-transform: lowercase;
 
                   a {
                     float: left;
@@ -129,7 +131,7 @@ input.button {
                     letter-spacing: 3.78947px;
                     font-weight: 200;
                     font-family: 'Arial Narrow';
-                    text-transform: uppercase;
+                    text-transform: lowercase;
                     color: #000;
                     line-height: 1.3125;
                     display: block;
@@ -140,6 +142,10 @@ input.button {
                 }
               }
             }
+          }
+          ul.a1-columns.splash {
+            margin-left: 15% !important;
+            width: 90% !important;
           }
           .splash {
             .dashicons {
@@ -193,8 +199,6 @@ input.button {
               li {
                 a {
                   div.ind-programs {
-                    /*border: 1px solid @a1-white;*/
-                    /*width: 70%;*/
                     padding: 1.5em 2.5em;
                     max-height: 16.7em;
                   }
@@ -247,37 +251,6 @@ input.button {
               }
             }
           }
-          .stayintouch {
-            float:left;
-            width: 100%;
-            padding: 1.6em;
-            text-align:center;
-
-            div#frm_form_2_container {
-              margin: 0 20% 0 20%;
-
-              div#frm_field_9_container {
-                margin: 0 0% 0 43%;
-              }
-              .frm_submit {
-                margin: 0 0% 0 42%;
-
-                input[type="submit"] {
-                  background: @a1-red;
-                  border: 1px solid @a1-white;
-                  border-radius: 2px;
-                  color: @a1-white;
-                  font-family: 'Dosis', sans-serif;
-                  font-weight: 200 !important;
-                  letter-spacing: 0.046875em;
-                  line-height: 1;
-                  padding: 1em !important;
-                  text-transform: uppercase;
-                  font-size: 1rem;
-                }
-              }
-            }
-          }
           .mem-col {
             a.title {
               letter-spacing: 0.046875em;
@@ -290,27 +263,73 @@ input.button {
           }
         }
 
+        aside#secondary {
+          margin-top: 3em;
+          h2.widget-title {
+            font-family: 'Dios', Sans-serif !important;
+            margin-bottom: .5em !important;
+          }
+          section ol li h4 a {
+            text-transform: lowercase;
+          }
+        }
+      }
+      .programs {
+        background: url(http://www.a1labarts.com/wp-content/uploads/2016/04/a1labarts_gallery_space.1.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        padding: 2em 19%;
+        margin: 0 -5%;
 
-        h1.entry-title { display:none;}
-        aside#content-bottom-widgets {
-          /*display: none;*/
-          /*background-color: @a1-red;
+        h2.pr-top {
+          color: #fff;
+          text-align: left;
+          border-bottom: 1px solid;
+          width: 94%;
+          margin-bottom: 1em;
+        }
 
-          .widget-area {
-            a { color: @a1-white;}
-            section#nav_menu-3 {
-              width: 50%;
-              float: left;
-              padding: 2% 5%;
-              background-color: transparent;
+        .program-slide-show .caption {
+          font-size: 1.3em;
+          letter-spacing: 1px;
+          font-family: 'Dosis', sans-serif;
+          font-weight: 200 !important;
+          text-transform: uppercase;
+          text-align: center;
+          background: @a1-gr;
+        }
+      }
+      .stayintouch {
+        float:left;
+        width: 100%;
+        padding: 1.6em;
+        text-align:center;
+
+        div#frm_form_2_container {
+          margin: 0 20% 0 20%;
+
+          div#frm_field_9_container {
+            margin: 0 0% 0 43%;
+          }
+          .frm_submit {
+            margin: 0 0% 0 42%;
+
+            input[type="submit"] {
+              background: @a1-red;
+              border: 1px solid @a1-white;
+              border-radius: 2px;
+              color: @a1-white;
+              font-family: 'Dosis', sans-serif;
+              font-weight: 200 !important;
+              letter-spacing: 0.046875em;
+              line-height: 1;
+              padding: 1em !important;
+              text-transform: uppercase;
+              font-size: 1rem;
             }
-            section#text-2 {
-              width: 50%;
-              float: left;
-              padding: 2% 5%;
-              background-color: transparent;
-            }
-          }*/
+          }
         }
       }
       footer#colophon {
@@ -412,12 +431,16 @@ input.button {
     }
 }
 .home.page-id-10 {
+
   header#masthead {
     position: absolute;
   }
+  .entry-header h2.entry-title {
+    display: none;
+  }
   .entry-content {
     padding-top: 0em !important;
-    border-top: 5px solid @a1-red;
+    /*border-top: 5px solid @a1-red;*/
 
     h2 { margin-bottom: .3em; margin-top: .3em; }
     h6 { margin-top: 1.3em; margin-bottom: 1.6em; }
@@ -431,6 +454,12 @@ input.button {
 
 /* Small screen 56.874em */
 @media screen and (max-width: 910px) {
+  .a1-slide-show ul.rslides li .caption-wrap {
+    background: #646464;
+    .caption {
+      font-family: @a1-font2;
+    }
+  }
   div#content {
     .entry-content {
       div#tribe-events {
@@ -441,12 +470,12 @@ input.button {
           font-family: 'Dosis', sans-serif;
         }
       }
-      .a1-slide-show ul.rslides li .caption-wrap {
+      /*.a1-slide-show ul.rslides li .caption-wrap {
         background: #646464;
         .caption {
           font-family: @a1-font2;
         }
-      }
+      }*/
       ul.a1-columns.splash {
         margin-left: 15% !important;
       }
@@ -483,18 +512,6 @@ input.button {
         }
       }
     }
-    /*.widget-area {
-      section#text-2 {
-        width: 100% !important;
-        float: left;
-        background-color: @a1-red !important;
-
-      }
-      section#nav_menu-3 {
-        display: none !important;
-
-      }
-    } */
   }
   header#masthead {
     margin-left: 7.6923%;
@@ -510,6 +527,46 @@ input.button {
 }
 /* Medium screen 56.875em  68.5624em */
 @media screen and (min-width: 910px) and (max-width: 1096px) {
+  .a1-slide-show {
+
+    ul.rslides {
+      z-index: -1;
+
+      li .caption-wrap {
+        height: 70%;
+        width: 30%;
+        margin-left: 60%;
+        background: #646464;
+        padding: 1em;
+
+        .caption {
+          font-size: 2.3em;
+          line-height: 1.3;
+          font-family: @a1-font2;
+          font-weight: 300;
+
+        }
+      }
+    }
+    ul.rslides_tabs.rslides1_tabs {
+      position: relative;
+      top: -3em;
+      z-index: 1;
+      background-color: transparent;
+      border-bottom: 1px solid #fff !important;
+      width: 80%;
+      margin-left: 10% !important;
+
+      li {
+        position: relative;
+        right: -13em;
+
+        a.rslides1_s1 {
+          box-shadow: 0 0px 0 0 currentColor;
+        }
+      }
+    }
+  }
   div#content {
     .entry-content {
       div#tribe-events {
@@ -521,52 +578,10 @@ input.button {
           font-family: 'Dosis', sans-serif;
         }
       }
-
-      .a1-slide-show {
-
-        ul.rslides {
-          z-index: -1;
-
-          li .caption-wrap {
-            height: 70%;
-            width: 30%;
-            margin-left: 60%;
-            background: #646464;
-            padding: 1em;
-
-            .caption {
-              font-size: 2.3em;
-              line-height: 1.3;
-              font-family: @a1-font2;
-              font-weight: 300;
-
-            }
-          }
-        }
-        ul.rslides_tabs.rslides1_tabs {
-          position: relative;
-          top: -3em;
-          z-index: 1;
-          background-color: transparent;
-          border-bottom: 1px solid #fff !important;
-          width: 80%;
-          margin-left: 10% !important;
-
-          li {
-            position: relative;
-            right: -13em;
-
-            a.rslides1_s1 {
-              box-shadow: 0 0px 0 0 currentColor;
-            }
-          }
-        }
-      }
       ul#programs {
         li {
           a {
             div.ind-programs {
-              /*border: 1px solid @a1-white;*/
               width: 100%;
             }
           }
@@ -640,7 +655,48 @@ input.button {
 }
 /* Big screen 68.5625em */
 @media screen and (min-width: 1097px) {
+  .a1-slide-show {
+    border-top: 5px solid @a1-red;
+    margin-right: -5% !important;
+    margin-left: -5% !important;
 
+    ul.rslides {
+      z-index: 1;
+
+      li .caption-wrap {
+        height: 70%;
+        width: 30%;
+        margin-left: 60%;
+        background: #646464;
+        padding: 2em 2.3em 0em 2.3em;
+
+        .caption {
+          font-size: 3em;
+          line-height: 1.3;
+          font-family: @a1-font2;
+          font-weight: 300;
+        }
+      }
+    }
+    ul.rslides_tabs.rslides1_tabs {
+      position: relative;
+      top: -3em;
+      z-index: 1;
+      background-color: transparent;
+      border-bottom: 1px solid #fff !important;
+      width: 80%;
+      margin-left: 10% !important;
+
+      li {
+        position: relative;
+        right: -19em;
+
+        a {
+          box-shadow: 0 0px 0 0 currentColor;
+        }
+      }
+    }
+  }
   div#content {
     .entry-content {
       div#tribe-events {
@@ -653,50 +709,11 @@ input.button {
         }
       }
 
-      .a1-slide-show {
 
-        ul.rslides {
-          z-index: 1;
-
-          li .caption-wrap {
-            height: 70%;
-            width: 30%;
-            margin-left: 60%;
-            background: #646464;
-            padding: 2em 2.3em 0em 2.3em;
-
-            .caption {
-              font-size: 3em;
-              line-height: 1.3;
-              font-family: @a1-font2;
-              font-weight: 300;
-            }
-          }
-        }
-        ul.rslides_tabs.rslides1_tabs {
-          position: relative;
-          top: -3em;
-          z-index: 1;
-          background-color: transparent;
-          border-bottom: 1px solid #fff !important;
-          width: 80%;
-          margin-left: 10% !important;
-
-          li {
-            position: relative;
-            right: -19em;
-
-            a {
-              box-shadow: 0 0px 0 0 currentColor;
-            }
-          }
-        }
-      }
       ul#programs {
         li {
           a {
             div.ind-programs {
-              /*border: 1px solid @a1-white;*/
               width: 70%;
             }
           }
@@ -731,7 +748,6 @@ input.button {
         border-bottom: 2px solid #ccc;
         border-right: 2px solid #ccc;
         padding: .8em 0 0;
-        /*margin: .5em 0em 0em 0em;*/
 
         .main-navigation {
           margin: 20px 0em;
