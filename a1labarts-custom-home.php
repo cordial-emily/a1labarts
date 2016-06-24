@@ -76,28 +76,20 @@ get_header(); ?>
 
             <div class="programs" id="programs">
                 <ul class="a1-columns" id="programs">
-                    <h2 class="pr-top">Programs</h2>
+                    <h2 class="pr-top">Explore</h2>
                     <li>
-                        <a class="button" href="https://www.facebook.com/abandonedART/info?tab=page_info" target="_blank">
+                        <a class="button" href="http://www.a1labarts.com/category/archives/" target="_blank">
                             <div class="ind-programs">
-                                <img src="https://c2.staticflickr.com/8/7710/26771743961_f57d110752_m.jpg" alt="Abandon Your Art" width="150" height="auto" />
-                                <h2>Abandon Your Art</h2>
+                                <div  alt="f342" class="dashicons dashicons-calendar-alt icons"></div>
+                                <h2>Past Events</h2>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="http://www.a1labarts.com/a-show-of-hands/">
+                        <a href="http://www.a1labarts.com/calendar/list/?tribe_paged=1&tribe_event_display=past">
                             <div class="ind-programs">
-                                <img src="https://farm2.staticflickr.com/1466/26598420111_56d08402f4_m.jpg" alt="A Show Of Hands" width="150" height="auto" />
-                                <h2>A Show of Hands</h2>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.a1labarts.com/photobooth/">
-                            <div class="ind-programs">
-                                <img src="https://farm2.staticflickr.com/1544/26570766952_cda675a60f_s.jpg" alt="Photo Booth" width="150" height="auto" />
-                                <h2>Photo Booth</h2>
+                                <div alt="f342" class="dashicons dashicons-media-archive icons"></div>
+                                <h2>Archives</h2>
                             </div>
                         </a>
                     </li>
