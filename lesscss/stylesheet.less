@@ -352,7 +352,7 @@ input.button {
               span.dashicons.dashicons-facebook {
                 font-size: 2em;
                 position: relative;
-                top: 25px;
+                /*top: 25px;*/
               }
             }
             a.one {
@@ -373,7 +373,7 @@ input.button {
             display: none;
           }
           img.grassroots {
-            height: 90px;
+            height: 40px;
           }
         }
       }
@@ -464,7 +464,7 @@ input.button {
   }
 } /* calendar page only */
 article#post-0 .entry-content {
-  margin-left: 0;
+  margin-left: 1%;
   h1, h2, h3, h4, a.tribe-event-url {
     font-family: 'Dosis', sans-serif;
     font-weight: 200 !important;
@@ -481,9 +481,13 @@ article#post-0 .entry-content {
 }
 article.tribe_events { margin-top: 3em; }
 .entry-summary {  font-style: italic; }
-.no-sidebar .post-thumbnail img { max-width: 900px; }
-
-/* Small screen 56.874em */
+.no-sidebar .post-thumbnail img { max-width: 71%; }
+/* posts only */
+article.type-post img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+  width: 71%;
+}
+/* Media Queries */
+/****************** Small screen 56.874em *************************/
 @media screen and (max-width: 910px) {
   .a1-slide-show {
     ul.rslides {
