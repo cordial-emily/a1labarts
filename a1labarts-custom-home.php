@@ -54,8 +54,8 @@ get_header(); ?>
 
             <div class="a1newsbox">
                 <div class="innews">
-                    <h1>Events</h1>
-                    <?php echo do_shortcode("[ecs-list-events excerpt='true' cat='exhibition, workshop, performance, film' eventdetails='true' ecs-list-events thumb='true' thumbwidth='150' thumbheight='150' contentorder='thumbnail, date, title, excerpt, venue']"); ?>
+                    <h1><a href="/calendar/list/">Events</a></h1>
+                    <?php echo do_shortcode("[ecs-list-events excerpt='true' cat='exhibition, workshop, performance, film, drop-offpick-up, other-event' eventdetails='true' ecs-list-events thumb='true' thumbwidth='150' thumbheight='150' contentorder='thumbnail, date, title, excerpt, venue']"); ?>
 
                 </div>
                 <div class="innews">

@@ -44,8 +44,12 @@ input.button {
         width: 100%;
 
         .entry-content {
-          /*padding-top: 5em;*/
 
+          .full-width-block {
+            width: 100%;
+            min-height: 350px;
+            display: inline-block;
+          }
           ul.a1-columns.splash {
             margin-left: 15%;
             width: 90% !important;
@@ -136,7 +140,13 @@ input.button {
           float:left;
           padding: 1.6em;
 
-          h1, h2 {  color: @a1-gr; border-bottom: 1px solid; margin-bottom: .6em;  }
+          h1, h2 {  color: @a1-gr; border-bottom: 1px solid; margin-bottom: .6em;
+            a {
+              font-family: 'Dosis', sans-serif;
+              font-weight: 200 !important;
+              color: @a1-gr;
+            }
+          }
           h4 { margin-top: 0em; margin-bottom: .5em; }
           ul.ecs-event-list {
             margin: 0;
@@ -451,6 +461,9 @@ input.button {
   .entry-header h2.entry-title {
     display: none;
   }
+  img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    display: none;
+  }
   .entry-content {
     padding-top: 0em !important;
 
@@ -595,7 +608,7 @@ article.type-post img.attachment-post-thumbnail.size-post-thumbnail.wp-post-imag
         border: 3px solid #fff;
       }
       button#menu-toggle {
-        background-color: #646560;
+        background-color: @a1-gr;
         position: absolute;
         border: 3px solid #fff;
         right: 4em;
