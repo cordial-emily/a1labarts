@@ -329,7 +329,8 @@ input.button {
   margin: 0 15px 50px;
 }
 .site .site-inner .programs#programs ul li a div.ind-programs:hover {
-  background-color: #F0C236;
+  background-color: inherit;
+  /*@a1-yel*/
 }
 .site .site-inner .programs#programs ul li a h2 {
   margin: 0 0em 0em .5em;
