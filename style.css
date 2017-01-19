@@ -35,7 +35,7 @@ a {
 }
 input[type="reset"]:hover,
 a:hover {
-  background: #F0C236;
+  background: inherit; /* #F0C236 */
 }
 ul {
   list-style: none;
