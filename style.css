@@ -3,7 +3,7 @@
  Theme URI:
  Description:    To use this Child Theme, you must have twentysixteen parent theme installed.
  Author:         Emily Schleiner
- Author URI:
+ Author URI:     http://cordial-emily.com/
  Template:       twentysixteen
  Version:        1.0.0
 */
@@ -39,6 +39,10 @@ a:hover {
 }
 ul {
   list-style: none;
+}
+.hoverfix,
+input[type="reset"].hoverfix:hover {
+  background: #646560;
 }
 input.button {
   background: #cf6565;
