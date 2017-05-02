@@ -40,7 +40,7 @@ a:hover {
 ul {
   list-style: none;
 }
-.hoverfix,
+.hoverfix:hover,
 input[type="reset"].hoverfix:hover {
   background: #646560;
 }
