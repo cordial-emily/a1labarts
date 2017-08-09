@@ -53,6 +53,9 @@ input.button {
   font-weight: 200 !important;
   border-radius: 5px;
 }
+input.button.wbg[type="reset"]:hover {
+  background: #646560;
+}
 .widget {
   border-top: 2px solid #ccc;
 }
