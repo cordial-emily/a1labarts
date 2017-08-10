@@ -164,6 +164,10 @@ input.button.wbg[type="reset"]:hover {
   font-family: Montserrat, "Helvetica Neue", sans-serif;
   font-size: 2.2em;
 }
+.site .site-inner div#content .entry-content .a1labarts-form {
+  padding: 3em;
+  border: 1px solid;
+}
 .site .site-inner div#content aside#secondary {
   margin-top: 3em;
 }
@@ -386,14 +390,18 @@ input.button.wbg[type="reset"]:hover {
 }
 .site .site-inner footer#colophon {
   background: #cf6565;
+  padding-top: 1em;
 }
 .site .site-inner footer#colophon .site-info {
-  padding-left: 14%;
+  margin: .6em auto;
 }
 .site .site-inner footer#colophon .site-info .site-title {
   font-family: "Arial Narrow", sans-serif;
   color: #ffffff;
   font-size: 16px;
+}
+.site .site-inner footer#colophon .site-info .site-title ul.sub-menu li.menu-item a {
+  color: #000;
 }
 .site .site-inner footer#colophon .site-info .site-title a {
   color: #ffffff;
@@ -404,24 +412,28 @@ input.button.wbg[type="reset"]:hover {
   position: relative;
   /*top: 25px;*/
 }
-.site .site-inner footer#colophon .site-info .site-title a.one {
-  margin-right: 20px;
-  padding-right: 20px;
-  border-right: 1px solid #fff;
-}
-.site .site-inner footer#colophon .site-info .site-title a.two {
-  margin-right: 20px;
-  padding-right: 20px;
-  border-right: 1px solid #fff;
-}
-.site .site-inner footer#colophon .site-info .site-title a.three {
-  margin-right: 20px;
-}
 .site .site-inner footer#colophon .site-info .site-title:after {
   display: none;
 }
 .site .site-inner footer#colophon .site-info img.grassroots {
   height: 40px;
+}
+.site .site-inner footer#colophon .site-info a.givingassist {
+  text-align: center;
+  display: block;
+  height: 80px;
+  width: 100%;
+  margin-top: 20px;
+}
+.site .site-inner footer#colophon h6.footer-copyr {
+  display: block;
+  width: 90%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  color: #f2f2f2;
+  font-family: "Arial Narrow", sans-serif;
+  padding: .6em;
 }
 .site .site-inner header#masthead {
   z-index: 1;
@@ -746,6 +758,10 @@ article.type-post img.attachment-post-thumbnail.size-post-thumbnail.wp-post-imag
   div#content .innews .entry p {
     width: 47%;
   }
+  div#content .site-footer .main-navigation {
+    display: block;
+    margin: 1.75em auto;
+  }
   header#masthead {
     margin-left: 9%;
   }
@@ -939,5 +955,9 @@ article.type-post img.attachment-post-thumbnail.size-post-thumbnail.wp-post-imag
   .page-id-47 h6 {
     margin-top: .4347826087em !important;
     margin-bottom: .2173913043em !important;
+  }
+  .site-footer .main-navigation {
+    display: block;
+    margin: 1.75em auto;
   }
 }
