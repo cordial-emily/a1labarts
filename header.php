@@ -18,6 +18,7 @@
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link href='https://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<?php endif; ?>
 	<?php wp_head(); ?>
 </head>
