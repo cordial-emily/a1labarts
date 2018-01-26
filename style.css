@@ -44,7 +44,8 @@ ul {
 input[type="reset"].hoverfix:hover {
   background: #646560;
 }
-input.button {
+input.button,
+.wpcf7-form-control.wpcf7-submit {
   background: #cf6565;
   border: 1px solid #ffffff;
   font-size: 1em;
