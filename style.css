@@ -87,7 +87,13 @@ input.button.wbg[type="reset"]:hover {
   font-size: 1.75em;
 }
 .site .site-inner p {
-  font-family: SansSerif;
+  font-family: "Arial", SansSerif;
+}
+.site .site-inner label {
+  font-family: "Arial", SansSerif;
+}
+.site .site-inner option {
+  font-family: "Arial", SansSerif;
 }
 .site .site-inner div#content {
   z-index: -1;
