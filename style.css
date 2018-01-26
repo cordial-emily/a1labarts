@@ -89,9 +89,8 @@ input.button.wbg[type="reset"]:hover {
 .site .site-inner p {
   font-family: "Arial", SansSerif;
 }
-.site .site-inner label {
-  font-family: "Arial", SansSerif;
-}
+.site .site-inner label,
+.site .site-inner select,
 .site .site-inner option {
   font-family: "Arial", SansSerif;
 }
