@@ -94,6 +94,11 @@ input.button.wbg[type="reset"]:hover {
 .site .site-inner option {
   font-family: "Arial", SansSerif;
 }
+.site .site-inner select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required {
+  background: #f7f7f7;
+  height: 2.5em;
+  border: 1px solid #d1d1d1;
+}
 .site .site-inner div#content {
   z-index: -1;
   width: 100%;
