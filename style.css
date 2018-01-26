@@ -159,6 +159,9 @@ input.button.wbg[type="reset"]:hover {
 .site .site-inner div#content .entry-content .full-color-box .button.hoverfix {
   background: #837e7e;
 }
+.site .site-inner div#content .entry-content .wpcf7 form.sent p {
+  display: none;
+}
 .site .site-inner div#content .entry-content .mem-col a.title {
   letter-spacing: 0.046875em;
   line-height: 1.3125;
